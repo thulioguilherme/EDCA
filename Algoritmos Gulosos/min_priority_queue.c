@@ -84,7 +84,7 @@ void heap_decrease_key(long int* vertexes_pos, long int* costs, long int heap_si
 
 /* insert a new element in the vector */
 void min_heap_insert(long int* vertexes_pos, long int* costs, long int* parents, long int* heap_size, long int vertex, long int cost) {
-  /* all new vertexs are insert in the end with cost -INF */
+  /* all new vertexes are insert in the end with cost +INF */
   *heap_size               = *heap_size + 1;
   vertexes_pos[*heap_size] = vertex;
   costs[*heap_size]        = LONG_MAX;
